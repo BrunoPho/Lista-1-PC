@@ -1,0 +1,34 @@
+<!-- O mesmo aluno da questão 3 vai perder um ponto na média final da disciplina de
+algoritmos para cada 100 tweets que escrever. Escreva um algoritmo que solicite ao
+usuário a nota inicial do aluno, o número de tweets do aluno no ano, calcule a sua
+nota final e mostre na tela. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<script>
+		
+		var bimestres, aulasPorBimestre, tweets, nota;
+		 
+		 bimestres = 4;
+		 aulasPorBimestre = 20; 
+		 
+		 tweets  = prompt("Informe quantos tweets você postou hoje: ");
+		 nota  = prompt("Informe quanto sua nota inicial: ");
+		 
+		 aulasPorAno = bimestre * aulasPorBimestre;
+		 tweetsT = aulasPorAno * tweets;
+		 media = tweets / 100;
+		 mediaT = media - nota;
+
+		 alert("Nota: " + mediaT);
+		 alert("Numero de pontos que você perdeu: " + media);
+	
+	</script>
+
+</head>
+<body>
+</body>
+</html>
