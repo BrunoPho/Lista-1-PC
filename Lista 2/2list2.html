@@ -1,0 +1,26 @@
+<!-- Em um game o jogador precisa eliminar 150 monstros para subir cada nível. Escreva
+um programa em JavaScript que pergunte quantos monstros o jogador já eliminou e
+calcule e mostre na tela em qual nível ele está. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<script>
+		
+		var monstros, kills, nivel;
+		 
+		 monstros = 150;
+		 kills    = prompt("Quantos monstros você matou meu íncrivel guerreiro? ");
+		 nivel    = kills / monstros;
+		 
+		alert("Seu nível é " + Math.round(nivel) + " Magnifico");
+		alert("Parabéns continue assim!!!");
+	
+	</script>
+
+</head>
+<body>
+</body>
+</html>
