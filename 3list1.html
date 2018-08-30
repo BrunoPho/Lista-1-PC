@@ -9,12 +9,12 @@ um ano, sabendo que um ano possui 4 bimestres, e cada bimestre possui 20 aulas. 
 
 	<script>
 		
-		var bimestres, aulasPorBimestre, tweets;
+		var bimestres, aulasPorBimestre, tweets, aulasPorAno, tweetsT;
 		 
 		 bimestres = 4;
 		 aulasPorBimestre = 20; 
 		 tweets  = prompt("Informe quantos tweets você postou hoje: ");
-		 aulasPorAno = bimestre * aulasPorBimestre;
+		 aulasPorAno = bimestres * aulasPorBimestre;
 		 tweetsT = aulasPorAno * tweets;
 
 		 alert("tweetsT por ano " + tweetsT);

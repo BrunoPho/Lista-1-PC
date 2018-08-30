@@ -18,10 +18,10 @@ nota final e mostre na tela. -->
 		 tweets  = prompt("Informe quantos tweets você postou hoje: ");
 		 nota  = prompt("Informe quanto sua nota inicial: ");
 		 
-		 aulasPorAno = bimestre * aulasPorBimestre;
+		 aulasPorAno = bimestres * aulasPorBimestre;
 		 tweetsT = aulasPorAno * tweets;
 		 media = tweets / 100;
-		 mediaT = media - nota;
+		 mediaT = nota - media;
 
 		 alert("Nota: " + mediaT);
 		 alert("Numero de pontos que você perdeu: " + media);
