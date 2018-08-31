@@ -1,0 +1,35 @@
+<!-- Juracildo mora a 3 km de distância da escola onde estuda e vai pra aula a pé todos os
+dias. Ele quer saber a distância média em centímetros e o tempo médio de cada um
+de seus passos. Escreva um programa em JavaScript que pergunte quantos minutos
+Juracildo leva para chegar à escola e quantos passos ele dá do início ao fim de seu
+trajeto, e mostre na tela quantos centímetros tem cada passo e quantos segundos
+dura cada passo de Juracildo. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<script>
+		
+		var distanciaDaEscola, passos, tempo, mediaPassos, mediaTempo, conversorcm, conversorSeg;
+		 
+		 distanciaDaEscola = 3;
+		 passos = prompt("Quantos passos você deu da sua casa a escola? ");
+		 tempo  = prompt("Quanto tempo você demorou de casa a escola em minutos");
+		 
+		 conversorcm = distanciaDaEscola * 100000;
+		 conversorSeg = tempo * 60;
+
+         mediaPassos = conversorcm / passos;
+         mediaTempo = conversorSeg / passos;
+		 
+		alert("Cada passo seu tem " + Math.round(mediaPassos) + " cm");
+		alert("E você da cada passo em " + mediaTempo + " segundos");
+	
+	</script>
+
+</head>
+<body>
+</body>
+</html>

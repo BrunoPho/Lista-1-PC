@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> ex7 </title>
+	<link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#resposta").hide();
+			$("#botao").click(function(){
+				$("#resposta").hide();
+				var nome1 = $("#nome1").val();
+				var nome2 = $("#nome2").val();
+				var x = nome1;
+				var nome1 = nome2;
+				var nome2 = x;
+				var resposta1 = nome1.split('').reverse().join('');
+				var resposta2 = nome2.split('').reverse().join('');
+				$("#quantia").html(resposta1);
+				$("#quantia2").html(resposta2);
+				$("#resposta").show();
+			});
+		});
+	</script>
+
+	<div>
+		<div class="ui form">
+			<h4 class="ui dividing header">Inverter</h4>
+			<div class="two fields">
+				<div class="field">
+					<label>Primeiro Nome:</label>
+					<input id="nome1" type="text">
+				</div>
+				<div class="field">
+					<label>Segundo Nome:</label>
+					<input id="nome2" type="text">
+				</div>
+			</div>
+			<div id="botao" class="ui animated green button" tabindex="0" style="float: right">
+				<div class="visible content"> enviar </div>
+				<div class="hidden content">
+					<i class="right arrow icon"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="resposta" class="ui container segment" style="margin-top: 5%; background-color: #f2f2f2">
+		<h1 style="display: inline"> O primeiro nome Invertido fica assim: " </h1>
+		<h1 id="quantia2" style="display: inline"></h1>
+		<h1 style="display: inline"> " </h1>
+		<h1 style="display: inline"> Já o Segundo fica Assim: " </h1>
+		<h1 id="quantia" style="display: inline"></h1><h1 style="display: inline"> ". </h1>
+	</div>
+
+
+</body>
+</html>
